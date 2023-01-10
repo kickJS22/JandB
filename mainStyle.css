@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::selection{
+	color: white;
+	background-color: black;
+}
+
+
+#emojisglow  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-bottom: 60px;
+	margin-top: 60px;	
+	border: 2px solid #efc732;
+	border-radius: 50px 50px 50px 50px ;
+	border-spacing: 10px;
+	box-shadow: 0px 0px 7px 1px #efc732;
+	max-width: 220px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
+}
+
+body {
+	background: #56356f;
+	background-image: url(./bg.png);
+}
+
+
+#mainImage {
+	width: 100%;
+	transition: 1s;
+}
+
+#mainImage:hover {
+	transform: scale(1.8);
+	cursor: pointer;
+}
+#Image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+	overflow: hidden;
+}
+
+#navBar{
+	position: sticky;
+	top: 0;
+	display: flex;
+	height: 80px;
+	width: auto;
+	background-image: url(./navImage.png);
+	background-repeat: no-repeat;
+	align-items: center;
+	justify-content: space-between;
+}
+#cornerlogo {
+	display:flex;
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+}
+
+#RightNav{
+	padding: 20px;
+}
+
+#RightNav li {
+	display: inline;
+	list-style: none;
+}
+
+#RightNav li a {
+	font-size: 30px;
+	text-decoration: none;
+	padding: 0px 0px 30px 30px;
+	font-family: 'Montserrat', sans-serif;
+	color: #efc732;
+	text-shadow: 0px 0px 7px #efc732;
+}
