@@ -95,12 +95,14 @@ body {
 	overflow: hidden;
 }
 
+#navBar{
+
+}
 
 #cornerlogo {
 	width: 70px;
 	height: 70px;
 	display: flex;
-	position: sticky;
 	justify-content: flex-start;
 	align-items: center;
 	padding: 10px;
