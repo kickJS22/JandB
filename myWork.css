@@ -37,4 +37,25 @@
 	height: auto;
 }
 
+.workProgText{
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #efc732;
+	font-size: 40px;
+	margin: auto;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	text-shadow: 0px 0px 7px #efc732;
+	border: 2px solid #efc732;
+	border-radius: 50px 50px 50px 50px ;
+	border-spacing: 10px;
+	box-shadow: 0px 0px 7px 1px #efc732;
+	max-width: 750px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
+
+}
 
