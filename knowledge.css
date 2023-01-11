@@ -53,3 +53,15 @@
     width: 300px;
     padding: 50px;    
 }
+
+@media screen and (max-width:667px) {
+    .knowledgeText{
+        font-size: 10px;
+    }
+
+    .knowledgeImg{
+        height: 100px;
+        width: 100px;
+        padding: 50px;    
+    }
+}

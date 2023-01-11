@@ -37,7 +37,7 @@
 	height: auto;
 }
 
-.workProgText{
+#workProgText{
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	justify-content: center;
