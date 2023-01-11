@@ -1,0 +1,22 @@
+#navBarRes{
+    display: none;
+}
+
+@media  screen and (max-width:710px) {
+    #navBar{
+        display: none;
+    }
+    #navBarRes{
+        display: flex;
+        position: sticky;
+	    top: 0;
+	    display: flex;
+	    height: 80px;
+	    width: auto;
+	    background-image: url(./navImage.png);
+	    background-repeat: no-repeat;
+	    align-items: center;
+	    justify-content: space-between;
+    }    
+}
+
