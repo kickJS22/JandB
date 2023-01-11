@@ -2,6 +2,9 @@
     display: none;
 }
 
+#resButton{
+    display: none;
+}
 @media  screen and (max-width:710px) {
     #navBar{
         display: none;
@@ -44,3 +47,25 @@
     }
 }
 
+@media  screen and (max-width:425px) {
+    #RightNav{
+        display: none;
+    }
+    #resButton{
+        display: flex;
+        height: 50px;
+        width: 50px;
+        background-image: url(./images/three-dots-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-color: transparent;
+        padding: 5px;
+        border-style: none;
+        transition: 0.7s;
+    }
+    
+    #resButton:hover {
+        rotate: 90deg;
+        cursor: pointer;
+    }
+}
