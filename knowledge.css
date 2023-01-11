@@ -33,7 +33,8 @@
     font-size: 20px;
     height: auto;
     width: 800px;
-    padding: 50px;   
+    padding-left: 20px; 
+    padding-bottom: 20px;  
     /* border: 4px yellow solid; */
 }
 
@@ -51,7 +52,7 @@
 .knowledgeImg{
     height: 300px;
     width: 300px;
-    padding: 50px;    
+    padding-left: 50px;    
 }
 
 @media screen and (max-width:667px) {
@@ -62,6 +63,14 @@
     .knowledgeImg{
         height: 100px;
         width: 100px;
-        padding: 50px;    
+        padding-left: 50px;    
+    }
+}
+
+@media screen and (max-width:387px) {
+    .knowledgeImg{
+        height: 15%;
+        width: 15%;
+        padding-left: 25%;
     }
 }

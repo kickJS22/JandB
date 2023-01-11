@@ -47,3 +47,10 @@
     text-shadow: 0px 0px 15px #efc732;
     text-decoration: underline;
 }
+
+@media  screen and (max-width:300px) {
+	#aboutText{
+		padding: 20px;
+	}
+}
+	
