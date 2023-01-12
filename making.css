@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#resNavDiv {
+  position: absolute;
+  top: 0; }
+
+#responsiveNav {
+  display: flex;
+  padding: 20px;
+  margin: 0;
+  background-color: #56356f;
+  align-items: center;
+  justify-content: center;
+  max-height: 300px;
+  max-width: 200px; }
+
+#responsiveNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+#responsiveNav ul li {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  font-family: Montserrat, sans-serif;
+  color: #efc732;
+  text-shadow: 0px 0px 7px #efc732;
+  text-align: center; }
+
+

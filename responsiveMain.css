@@ -3,8 +3,13 @@
     display: none;
 }
 
+#navBar{
+    z-index: 2;
+}
+
 #responsiveNav{
     display: none;
+    z-index: 1;
 }
 
 @media  screen and (max-width:710px) {
@@ -53,28 +58,45 @@
     #RightNav{
         display: none;
     }
+
+   
     #resButton{
-        display: flex;
+        display: inline;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 3;
         height: 50px;
         width: 50px;
         background-image: url(./images/three-dots-removebg-preview.png);
         background-repeat: no-repeat;
         background-size: 50px 50px;
         background-color: transparent;
-        margin: 5px;
+        margin: 15px;
         padding: 5px;
         border-style: none;
         rotate: 0deg;
         transition: 0.7s;
     }
     
+    #resButton:hover {
+        rotate: -90deg;
+    }    
+
+   
+    #resButton:hover + #resNavDiv{
+        top: 70px;
+    }
+
+
     #resNavDiv{
-        position: absolute;
+        position: fixed;
         top:-370px;
         right: 0;
         transition: 0.7s;
     }
 
+  
     #responsiveNav{
         display:flex;
         padding: 20px;
@@ -98,20 +120,17 @@
     #responsiveNav ul li{
         padding-top: 10px;
         padding-bottom: 60px;
-        font-family: Montserrat, sans-serif;
+        text-align: center;
+        
+    }
+
+    #responsiveNav ul li a{
+        font-family: 'Montserrat', sans-serif;
         color: #efc732;
         text-shadow: 0px 0px 7px #efc732;
-        text-align: center;
         text-decoration: none;
     }
-
-     #resButton:hover {
-        rotate: -90deg;
-    }    
-
-    #resButton:hover #resNavDiv{
-        top: 70px;
-    }
+  
 
    
     
