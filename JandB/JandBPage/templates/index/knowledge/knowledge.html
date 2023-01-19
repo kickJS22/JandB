@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,38 +6,38 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link id="icon" rel="icon" type="text/css" href="J&Blogo.ico">
-		<link rel="stylesheet" href="mainStyle.css">
-		<link rel="stylesheet" type="text/css" href="knowledge.css">
-        <link rel="stylesheet" href="responsiveMain.css">
+		<link rel="stylesheet" href="{% static 'knowledge/knowledge.css'%}"">
+		<link rel="stylesheet" type="text/css" href="{% static 'generalFiles/mainStyle.css'%}"">
+		<link rel="stylesheet" href="{% static 'generalFiles/responsiveMain.css'%}"">
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@800&display=swap');
 			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 		</style>
 	</head>
-		<body>
+		<body>			
 			<div id="navBar">
-				<a href="index.html"><img id="cornerlogo" src="cornerLogo.png"></a> 
+				<a href="/"><img id="cornerlogo" src="{% static 'generalFiles/cornerLogo.png'%}"></a> 
 				<nav>
 					<ul id="RightNav">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="#knowledge">KNOWLEDGE</a></li>
-						<li><a href="mywork.html">MY WORK</a></li>
-					</ul>
-				</nav>
-			</div>	
-            <button type="button" id="resButton"></button>
-			<div id="resNavDiv">
-				<nav id="responsiveNav">
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="#knowledge">KNOWLEDGE</a></li>
-						<li><a href="mywork.html">MY WORK</a></li>
+						<li><a href="/">HOME</a></li>
+						<li><a href="knowledge">KNOWLEDGE</a></li>
+						<li><a href="mywork">MY WORK</a></li>
 					</ul>
 				</nav>
 			</div>
-			<img src="glowemojis.png" id="emojisglow" title="JDesings.png" alt="Jdesings Profile Image">
+			<img src="{% static 'generalFiles/glowemojis.png'%}" id="emojisglow" title="JDesings.png" alt="Jdesings Profile Image">
+			<button type="button" id="resButton"></button>
+			<div id="resNavDiv">
+				<nav id="responsiveNav">
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li><a href="knowledge">KNOWLEDGE</a></li>
+						<li><a href="mywork">MY WORK</a></li>
+					</ul>
+				</nav>
+			</div>	
 			<div id="Image">
-				<img src="mainImage.png" id="mainImage" title="J&Bdesings.png" alt="Bustillos Desings">
+				<img src="{% static 'generalFiles/mainImage.png'%}" id="mainImage" title="J&Bdesings.png" alt="Bustillos Desings">
 			</div>
 			<div id="knowledge">
 				<h2 id="knowledgeTitle">KNOWLEDGE</h2>
@@ -47,7 +48,7 @@
                             programa estan subidos en la pestaña <a href="mywork.html">MY WORK</a>, con unos 3 años de uso casual y proyectos 
                             para algunas empresas locales.
                         </p>
-                        <img class="knowledgeImg" src="./KNFolder/KNPS.png" alt="">
+                        <img class="knowledgeImg" src="{% static 'knowledge/KNImages/KNPS.png'%}" alt="">
                     </div>
                     
                     <div id="knowledgeILL" class="knowledgeInfo">
@@ -56,7 +57,7 @@
                             programa estan subidos en la pestaña <a href="mywork.html">MY WORK</a>, con unos 2 años de uso casual, sin proyectos específicos
                             hasta el momento.
                         </p>
-                        <img class="knowledgeImg" src="./KNFolder/KNAI.png" alt="">
+                        <img class="knowledgeImg" src="{% static 'knowledge/KNImages/KNAI.png'%}" alt="">
                     </div>
 
                     <div id="knowledgeC#" class="knowledgeInfo">
@@ -65,7 +66,7 @@
                             lenguaje estan subidos en la pestaña <a href="mywork.html">MY WORK</a>, con unos 3 años de uso casual, con gran variedad de
                             proyectos personales con el motor de videojuegos unity.
                         </p>
-                        <img class="knowledgeImg" src="./KNFolder/KNCshap.png" alt="">
+                        <img class="knowledgeImg" src="{% static 'knowledge/KNImages/KNCsharp.png'%}" alt="">
                     </div>
 
                     <div id="knowledgeUNITY" class="knowledgeInfo">
@@ -74,7 +75,7 @@
                             programa estan subidos en la pestaña <a href="mywork.html">MY WORK</a>, con unos 3 años de uso casual, con gran variedad de
                             proyectos personales con el lenguaje C#.
                         </p>
-                        <img class="knowledgeImg" src="./KNFolder/KNUNITY.png" alt="">
+                        <img class="knowledgeImg" src="{% static 'knowledge/KNImages/KNUNITY.png'%}" alt="">
                     </div>
 
                     <div id="knowledgeJS" class="knowledgeInfo">
@@ -83,7 +84,7 @@
                             lenguaje estan subidos en la pestaña <a href="mywork.html">MY WORK</a>, con un año de uso casual, con varios proyectos personales y
                             un proyecto oficial.
                         </p>
-                        <img class="knowledgeImg" src="./KNFolder/KNJS.png" alt="">
+                        <img class="knowledgeImg" src="{% static 'knowledge/KNImages/KNJS.png'%}" alt="">
                     </div>
 
                     <div id="knowledgeHTML" class="knowledgeInfo">
@@ -92,7 +93,7 @@
                             lenguaje estan subidos en la pestaña <a href="mywork.html">MY WORK</a>, con un año de uso casual, con varios proyectos personales y
                             un proyecto oficial.
                         </p>
-                        <img class="knowledgeImg" src="./KNFolder/KNHTML.png" alt="">
+                        <img class="knowledgeImg" src="{% static 'knowledge/KNImages/KNHTML.png'%}" alt="">
                     </div>
 
                     <div id="knowledgeCSS" class="knowledgeInfo">
@@ -101,13 +102,12 @@
                             lenguaje estan subidos en la pestaña <a href="mywork.html">MY WORK</a>, con un año de uso casual, con varios proyectos personales y
                             un proyecto oficial.
                         </p>
-                        <img class="knowledgeImg" src="./KNFolder/KNCSS.png" alt="">
+                        <img class="knowledgeImg" src="{% static 'knowledge/KNImages/KNCSS.png'%}" alt="">
                     </div>
 
                 </div>
 				
 			</div>	
-			<script src="index.js"></script>
 	</body>
 
 </html>
