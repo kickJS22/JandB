@@ -1,0 +1,26 @@
+<!-- Extiendo el archivo base para obtener toda esa info default -->
+{%extends "../base.html"%} 
+
+{% load static %}
+
+<!-- dentro de style defino mi info personalizada -->
+{%block style%}
+<link rel="stylesheet" href="{% static 'myWork/myWork.css'%}">
+{%endblock%}
+
+<!-- dentro de addInfo defino mi info personalizada -->
+{%block addInfo%}
+<div id="trabajos">
+	<h2 id="workTitle">MY WORK</h2>
+	<h2 id="workProgText">PHOTOSHOP & ILLUSTRATOR</h2>
+	<div id="work_container">
+		<img src="{% static 'myWork/images/curryCampeon.png'%}" id="work">
+		<img src="{% static 'myWork/images/1917.png'%}" id="work">
+		<img src="{% static 'myWork/images/gothicArchitecture.png'%}" id="work">
+		<img src="{% static 'myWork/images/hadesTheGame.png'%}" id="work">
+		<img src="{% static 'myWork/images/Notorius.png'%}" id="work">
+		<img src="{% static 'myWork/images/world.png'%}" id="work">
+		<img src="{% static 'myWork/images/bdesings.png'%}" id="work">
+	</div>	
+</div>	
+{%endblock%}
