@@ -6,7 +6,8 @@ from . import views
 app_name = "JandB"
 
 urlpatterns = [
-    path("", views.home, name="home"),
+    path("", views.index, name="index"),
+    path("about", views.home, name="home"),
     path("mywork", views.mywork, name="mywork"),
     path("knowledge", views.knowledge, name="knowledge")
 ]
