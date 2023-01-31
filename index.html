@@ -1,13 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="{% url 'JandB:home' %}">toHome</a>
-</body>
-</html>
+<!-- Extiendo el archivo base para obtener toda esa info default -->
+{%extends "../base.html"%}
 
+{% load static %}
+
+<!-- dentro de style defino mi info personalizada -->
+{%block style%}
+<link rel="stylesheet" href="{% static 'home/index.css'%}">
+{%endblock%}
+
+<!-- dentro de addInfo defino mi info personalizada -->
+{%block addInfo%}
+<h2 id="aboutTitle">ABOUT ME</h2>
+<div id="aboutMeInfo">
+	<p id="aboutText">
+		Soy un programador y diseñador amateur, no cuento con mucha experiencia, sigo aprendiendo tecnologías
+		fundamentales incluyendo las básicas todo la información de mi conocimiento se encuentra
+		en la pestaña <a href="knowledge.html">KNOWLEDGE</a>, busco trabajo como desarrollador web para 
+		seguir desarrollando mis habilidades.
+	</p>
+</div>
+{%endblock%}			

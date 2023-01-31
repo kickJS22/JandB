@@ -58,7 +58,7 @@ import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.dirname("../templates/")],
+        'DIRS': [os.path.dirname("../")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

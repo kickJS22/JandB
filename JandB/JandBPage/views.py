@@ -7,10 +7,10 @@ def index(request):
 
 # Create your views here.
 def home(request):
-    return  render(request, "index/home/home.html")
+    return  render(request, "index.html")
 
 def knowledge(request):
-    return  render(request, "index/knowledge/knowledge.html")
+    return  render(request, "knowledge.html")
 
 def mywork(request):
-    return  render(request, "index/mywork/mywork.html")
+    return  render(request, "mywork.html")
