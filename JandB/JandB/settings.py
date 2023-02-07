@@ -52,13 +52,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'JandB.urls'
 
-import os
-
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.dirname("../")],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
