@@ -10,6 +10,8 @@
 #responsiveNav{
     display: none;
     z-index: 1;
+    background-image: url(./navImage.png);
+    background-size: cover;
 }
 
 @media  screen and (max-width:710px) {
@@ -101,7 +103,7 @@
         display:flex;
         padding: 20px;
         margin: 0;
-        background-color: #56356f;
+        /* background-color: #56356f; */
         box-shadow: 2px 1px 10px black;
         align-items: center;
         justify-content: center;
@@ -109,6 +111,7 @@
         max-width: 200px;
         height: 300px;
         width: 200px;
+        
     }
 
     #responsiveNav ul {
